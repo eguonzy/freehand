@@ -735,7 +735,7 @@
 
   .watch {
 
-    background: url('images/svg/image 3.svg');
+    background: url('/images/svg/image 3.svg');
     background-position: bottom;
     color: white;
     margin: 0 0 0 0;
