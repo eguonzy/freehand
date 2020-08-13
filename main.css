@@ -400,7 +400,7 @@
   .blue {
     text-align: center;
     height: 380px;
-    background-image: url('images/svg/image3.svg');
+    background-image: url('/images/svg/image3.svg');
     mix-blend-mode: soft-light;
     animation: spin 0.7s ease-in-out infinite alternate;
   }
@@ -699,7 +699,7 @@
   .blue {
     text-align: center;
     height: 350px;
-    background-image: url('images/svg/image3.svg');
+    background-image: url('/images/svg/image3.svg');
     mix-blend-mode: soft-light;
     border-radius: 10px;
     padding: 2%;
