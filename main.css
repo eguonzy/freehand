@@ -735,7 +735,7 @@
 
   .watch, .try {
     justify-self:flex-start;
-    width: 130px;
+    width: 150px;
     height: 48px;
     margin-right: auto;
     color: #183B56;
