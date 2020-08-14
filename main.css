@@ -436,7 +436,7 @@
   }
 
   .watch {
-    background: url('images/svg/image 3.svg');
+    background: url('test.svg');
     background-position: bottom;
     color: white;
     margin-left: 20px;
@@ -752,7 +752,7 @@
     margin: 0 0 0 5px;
   }
   .watch:active,.watch:hover,.try:active,.try:hover{
-filter: invert(1) hue-rotate(180deg);
+
   }
 
   .blue-buttons {
@@ -924,7 +924,7 @@ color:white
 }
 .log:active,.log:hover,.loge:active,.loge:hover{
     transition: all 0.7s ease;
-     filter:invert(1) hue-rotate(180deg)
+
 
 }
 @keyframes slide {
@@ -934,14 +934,14 @@ color:white
 
     }
     100%{
-        opacity:1;
+        opacity:0.9;
         left:0%
     }
 }
 @keyframes slideOut {
     0%{
         left:0%;
-        opacity: 1;
+        opacity: 0.9;
 
     }
     100%{
