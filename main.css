@@ -891,8 +891,10 @@ left:-55%;
     margin-bottom:2em;
     color:white;
     border-bottom: 1px solid white;
-    width:100%;
+    width:10%;
     padding-bottom:5px;
+    transition: all 0.7s ease;
+    transition-delay: 0.5s;
 }
 .port{
     margin-top: 5em;
@@ -993,6 +995,8 @@ align-items:center;
     height:48px;
     margin-left:0;
     margin-bottom:0;
-    margin-left:10px
+    margin-left:10px;
+    width:100%;
+    border-bottom:none
 }
 }

@@ -258,20 +258,32 @@ AOS.init({
   anchorPlacement: 'top-bottom',
 });
 let ham=document.querySelector('.ham')
+let p=document.querySelectorAll('.ham p')
 let menu=document.querySelector('.menu img')
 let logo = document.querySelector('.logo')
+
 menu.addEventListener('click',()=>{
 	if(ham.getAttribute('class')==('ham')){
 		logo.style.opacity='0'
 		ham.setAttribute('class',' ham i')
 		menu.style.animationName=('roll')
+	for(let x in p){
+
+		(/\d/).test(x)?p[x].style.width='80%':null
+	}
+
 	return	ham.style.animationName='slide'
 
 	}
+	for(let x in p){
+
+	(/\d/).test(x)?p[x].style.width='10%':null
+}
 	logo.style.opacity='1'
 	ham.setAttribute('class','ham')
 	menu.style.animationName='rollout'
 	ham.style.animationName='slideOut'
+
 
 })
 	</script>
