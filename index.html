@@ -15,7 +15,12 @@
     <title>Freehand</title>
   </head>
   <body>
-	  <div class="ham">
+
+    <div class="App"> <div class="ham">
+		<div  class="logi">
+			<img src="images/svg/top-icon.svg" alt="icon">
+			<p>Freehand</p>
+		</div>
 		<p class="port">Home</p>
 					<p >Portfolio</p>
 					<p>Pages</p>
@@ -25,7 +30,6 @@
 						<button class="log">Login</button>
 					</div>
 	  </div>
-    <div class="App">
 			<nav data-aos='fade-down'>
 				<div  class="logo">
 					<img src="images/svg/top-icon.svg" alt="icon">
@@ -255,13 +259,16 @@ AOS.init({
 });
 let ham=document.querySelector('.ham')
 let menu=document.querySelector('.menu img')
+let logo = document.querySelector('.logo')
 menu.addEventListener('click',()=>{
 	if(ham.getAttribute('class')==('ham')){
+		logo.style.opacity='0'
 		ham.setAttribute('class',' ham i')
 		menu.style.animationName=('roll')
 	return	ham.style.animationName='slide'
 
 	}
+	logo.style.opacity='1'
 	ham.setAttribute('class','ham')
 	menu.style.animationName='rollout'
 	ham.style.animationName='slideOut'
