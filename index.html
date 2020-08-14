@@ -15,6 +15,16 @@
     <title>Freehand</title>
   </head>
   <body>
+	  <div class="ham">
+		<p class="port">Home</p>
+					<p >Portfolio</p>
+					<p>Pages</p>
+					<p>Blog</p>
+					<div class="ham-btn">
+						<button class='loge'>Sign in</button>
+						<button class="log">Login</button>
+					</div>
+	  </div>
     <div class="App">
 			<nav data-aos='fade-down'>
 				<div  class="logo">
@@ -228,7 +238,8 @@
 		<p class='copy'>Copyup © 2020. Crafted with love.</p>
 		<p>Coded by <a href='https://github.com/eguonzy'title='my github repo' target='blank'>MaRzZ</a></p>
 			</section>
-    </div>
+	</div>
+	<div class='menu'><img src='images/svg/Vector (10).svg' alt="menu"></div>
     <script src="aos.js">
 
 	</script>
@@ -242,6 +253,20 @@ AOS.init({
   mirror: true, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom',
 });
+let ham=document.querySelector('.ham')
+let menu=document.querySelector('.menu img')
+menu.addEventListener('click',()=>{
+	if(ham.getAttribute('class')==('ham')){
+		ham.setAttribute('class',' ham i')
+		menu.style.animationName=('roll')
+	return	ham.style.animationName='slide'
+
+	}
+	ham.setAttribute('class','ham')
+	menu.style.animationName='rollout'
+	ham.style.animationName='slideOut'
+
+})
 	</script>
   </body>
 </html>

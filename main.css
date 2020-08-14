@@ -75,6 +75,7 @@
     flex-grow: 1;
   }
 
+
   .logo p {
     margin-left: 10px;
   }
@@ -217,7 +218,12 @@
     color: #16133D;
     margin-bottom: 6px;
   }
-
+.ham{
+    display: none;
+}
+.menu{
+    display: none;
+}
   .lorem, .lorem1 {
     font-family: Rm;
     height: 28px;
@@ -538,7 +544,10 @@
       padding: 0 5% 0 5%
     }
     nav{
-      width:fit-content; padding: 0 5% 0 5%
+      width:fit-content; padding: 0 5% 0 5%;
+    }
+    .logo{
+        z-index:10
     }
     .headings, .nav-buttons {
       display: none
@@ -726,12 +735,13 @@
 
   .watch, .try {
     justify-self:flex-start;
-    width: 150px;
+    width: 130px;
     height: 48px;
     margin-right: auto;
     color: #183B56;
     border: 1px solid #FFFFFF;
     border-radius: 50px;
+    transition:all ease 0.7s;
   }
 
   .watch {
@@ -739,7 +749,10 @@
     background-image: url('test.svg');
     background-position: bottom;
     color: white;
-    margin: 0 0 0 0;
+    margin: 0 0 0 5px;
+  }
+  .watch:active,.watch:hover,.try:active,.try:hover{
+filter: invert(1) hue-rotate(180deg);
   }
 
   .blue-buttons {
@@ -844,4 +857,123 @@
     color: rgba(13, 113, 153, 0.884);
     text-decoration: none;
   }
-  }
+  .menu{
+      display: block;
+animation:0.7s ease-in-out forwards;
+border-radius: 50%;
+padding: 2px;
+    position: fixed;
+    bottom:20px;
+    right:30px;
+}
+
+.menu img{
+    height:60px;
+    animation:0.7s ease-in-out forwards;
+}
+.ham{
+    position: fixed;
+    left:0px;
+    top:0px;
+    width: 50%;
+    background-color:#007FFC ;
+    opacity: 0;
+left:-55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:3;
+    border-radius: 0 10px 10px 0;
+    animation:ease-in-out forwards;
+    animation-duration: 0.7s;
+}
+.ham p{
+  text-align:center;
+    font-family:Rl;
+    margin-bottom:2em;
+    color:white;
+    border-bottom: 1px solid white;
+    width:100%;
+    padding-bottom:5px;
+}
+.port{
+    margin-top: 5em;
+}
+.ham-btn{
+    display:flex;
+    flex-direction:column;
+
+}
+.ham button{
+      font-family: Rb;
+    font-weight: 500;
+    font-size: 16px;
+    height: 48px;
+    width: 119px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition:all 0.7s ease
+}
+.log{
+background-color: #16133D;
+color:white
+}
+.loge{
+    background-color: #DDDDDD;
+}
+.log:active,.log:hover,.loge:active,.loge:hover{
+    transition: all 0.7s ease;
+     filter:invert(1) hue-rotate(180deg)
+
+}
+@keyframes slide {
+    0%{
+        left:-55%;
+        opacity: 0;
+
+    }
+    100%{
+        opacity:1;
+        left:0%
+    }
+}
+@keyframes slideOut {
+    0%{
+        left:0%;
+        opacity: 1;
+
+    }
+    100%{
+        opacity:0;
+        left:-55%
+    }
+}
+@keyframes roll{
+    0%{
+
+        border-radius: 0%;
+        padding:5px
+
+    }
+    100%{
+        transform:rotateZ(180deg);
+
+        border-radius: 50%;
+        padding:5px; background-color:green;
+    }
+}
+@keyframes rollout {
+0%{
+
+    border-radius: 50%;
+    padding:5px
+}
+100%{
+
+    transform:rotateZ(-180deg);
+    background-color:'white';
+    border-radius: 0%;
+    padding:5px
+}
+  }}
