@@ -40,7 +40,7 @@
   }
   */
 
-  section {
+  section {width: 100%;
     padding: 0 7% 0 10%;
   }
 
@@ -400,7 +400,7 @@
   .blue {
     text-align: center;
     height: 380px;
-    background-image: url('image3.svg');
+    background-image: url('test.svg');
     mix-blend-mode: soft-light;
     animation: spin 0.7s ease-in-out infinite alternate;
   }
@@ -700,7 +700,7 @@
   .blue {
     text-align: center;
     height: 350px;
-    background-image: url('image3.svg');
+    background-image: url('test.svg');
     mix-blend-mode: soft-light;
     border-radius: 10px;
     padding: 2%;
@@ -736,7 +736,7 @@
 
   .watch {
 
-    background: url('image3.svg');
+    background-image: url('test.svg');
     background-position: bottom;
     color: white;
     margin: 0 0 0 0;
